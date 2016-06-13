@@ -1,0 +1,78 @@
+@import "../css/normalize.css";
+@nav-first-font-size: 20px;
+@nav-bg-hcolor:#425172; //鼠标hover背景色
+@current-nav-bg-color:#0c5da5;//当前nav背景色
+@current-nav-font-color:#ffffff;//当前nav文字颜色
+@nav-font-hcolor:#00c618; //鼠标hover文字颜色
+@nav-font-color:#7a87a3;//导航中文字颜色
+
+#primary_nav_wrap {
+    ul,
+    ul li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        float: left;
+        position:relative;
+        transition:left .8s ease-in,top .8s ease-in;
+    }
+    //二级菜单
+    ul ul{
+     display: none;
+     position:absolute;
+     left:0;
+     top:100%;
+     padding:0;
+
+    }
+    //三级菜单
+    ul ul ul{
+    	left:100%;
+    	top:0;
+    }
+
+    ul li.current-menu-item {
+            background: @current-nav-bg-color;
+            & > a{color:@current-nav-font-color;}
+        }
+
+    ul li:hover {
+    	background: @nav-bg-hcolor;
+        &>a{color:@nav-font-hcolor;}   
+    }
+    ul li:hover > ul{
+      display:block;
+      li{background: @nav-bg-hcolor;}
+    }
+
+ 	//二级菜单内容
+    ul ul li{
+    	float:none;
+    	width:200px;   	
+    }
+
+    a {
+        display: block;
+        position: relative;
+        text-decoration: none;
+        font-family: 'Cinzel', serif;
+        color: #7a87a3;
+        font-size: @nav-first-font-size;
+        line-height: 22px;
+        padding: 46px 20px 47px;
+        &:hover{
+        	color: @nav-font-hcolor;
+        }
+        
+    }
+    //二级及以下菜单文字样式
+    ul ul a{
+    	    padding: 10px 5px;
+		    font-size: 16px;
+
+		    color: #fff;
+		    &:hover{
+				color: @nav-font-hcolor;
+	        }
+    }
+}
