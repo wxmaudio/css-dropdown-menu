@@ -1,0 +1,10 @@
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImJhc2UubGVzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFDRSxTQUFDO0FBQ0QsU0FBQztFQUNDLFNBQVMsR0FBVDtFQUNBLGNBQUE7O0FBRUYsU0FBQztFQUNDLFdBQUEiLCJzb3VyY2VzQ29udGVudCI6WyIuY2xlYXJmaXgge1xyXG4gICY6YmVmb3JlLFxyXG4gICY6YWZ0ZXIge1xyXG4gICAgY29udGVudDogXCIgXCI7IFxyXG4gICAgZGlzcGxheTogdGFibGU7IFxyXG4gIH1cclxuICAmOmFmdGVyIHtcclxuICAgIGNsZWFyOiBib3RoO1xyXG4gIH1cclxufSJdLCJmaWxlIjoiYmFzZS5jc3MiLCJzb3VyY2VSb290IjoiL3NvdXJjZS8ifQ== */
